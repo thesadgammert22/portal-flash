@@ -3,9 +3,9 @@
     "babel-preset-react": "^6.24.1",
     "react": "^5.0.2",
     "react-dom": "^18.0.0",
-    "react-scripts": "^18.0.0"
+    "react-scripts": "^18.2.0"
   },
-  "main": "/public/index.html",
+  "main": "/index.html",
   "devDependencies": {
     "babel-cli": "^6.6.5"
   },
