@@ -16,7 +16,7 @@
   "scripts": {
     "babel-version": "babel --version",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build; npm audit fix; npm audit fix --force",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
