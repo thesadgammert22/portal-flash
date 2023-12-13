@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "babel-version": "babel --version"
-  },
   "devDependencies": {
     "babel-cli": "^6.6.5"
   }
@@ -19,6 +16,7 @@
   "description": null,
   "version": "0.0.1",
   "scripts": {
+    "babel-version": "babel --version"
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
