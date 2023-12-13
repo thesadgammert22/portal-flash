@@ -15,7 +15,7 @@
   "scripts": {
     "updatejs": "npm install -g n n latest",
     "babel-version": "babel --version",
-    "start": "react-scripts start; react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build;",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
