@@ -3,18 +3,18 @@
     "babel-preset-react": "^6.24.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^4.0.0",
+    "react-scripts": "^4.0.0"
   },
   "main": "/index.html",
   "devDependencies": {
-    "babel-cli": "^6.6.5"
+    "babel-cli": "^6.6.5",
     "react-scripts": "1.0.0"
   },
   "name": "2u18li",
   "description": null,
   "version": "0.0.1",
   "scripts": {
-    "babel-version": "babel --version"
+    "babel-version": "babel --version",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
