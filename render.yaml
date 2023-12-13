@@ -1,5 +1,5 @@
 services:
   - type: web
-    name: interstellar
+    name: funny
     env: docker
     plan: free
