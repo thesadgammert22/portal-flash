@@ -7,8 +7,7 @@
   },
   "main": "/index.html",
   "devDependencies": {
-    "babel-cli": "^6.6.5",
-    "react-scripts": "1.0.0"
+    "babel-cli": "^6.6.5"
   },
   "name": "2u18li",
   "description": null,
