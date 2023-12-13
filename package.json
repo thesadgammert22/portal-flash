@@ -1,15 +1,14 @@
 {
-  "devDependencies": {
-    "babel-cli": "^6.6.5"
-  }
+
   "dependencies": {
     "babel-preset-react": "^6.24.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "^4.0.0"
   },
-  "main": "/index.js",
+  "main": "/index.html",
   "devDependencies": {
+    "babel-cli": "^6.6.5"
     "react-scripts": "1.0.0"
   },
   "name": "2u18li",
