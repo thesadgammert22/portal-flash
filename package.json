@@ -7,7 +7,7 @@
   },
   "main": "/index.html",
   "devDependencies": {
-    "babel-cli": "^7.23.4"
+    "babel-cli": "^6.26.0"
   },
   "name": "2u18li",
   "description": null,
