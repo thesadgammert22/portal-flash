@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
-  </head>
     <body>
+      <script>
+
+document.addEventListener("keypress", function onEvent(event) {
+    if (event.key === "Enter") {
+        openFullscreen();
+	}});
+
+  // Accessing the HTML element by id
+   
+         
+         // hiding the cursor
+       
+/* Get the element you want displayed in fullscreen */ 
+var elem = document.getElementById("myvideo");
+
+/* Function to open fullscreen mode */
+function openFullscreen() {
+myvideo.style.cursor ="none";
+
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+      
       <nav>
         <a href="./index.html">Home</a>
         <a href="./games/burger-frights/game.html">burger-frights</a>
       </nav>
     </body>
+  <iframe id="myvideo" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated" src="https://html-classic.itch.zone/html/5033568/index.html" scrolling="no" frameborder="0" allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true" height="744" width="800" ></iframe>
 </html>
