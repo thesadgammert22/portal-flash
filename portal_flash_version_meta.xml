@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <identifier>portal_flash_version</identifier>
+  <collection>softwarelibrary_flash_games</collection>
+  <date>2007-10-09</date>
+  <description>&lt;div&gt;From &lt;a href="https://portal.wecreatestuff.com/" rel="nofollow"&gt;https://portal.wecreatestuff.com/&lt;/a&gt;:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Based on &lt;a href="https://store.steampowered.com/app/400/Portal/" rel="nofollow"&gt;Valve's Portal&lt;/a&gt;, Portal: The Flash Version brings it all up in 2d!&lt;/b&gt;
+&lt;br /&gt;Portal: The Flash Version includes over 40 challenging, portals 
+thinking levels, and everything's included, in 2d - energy balls, cubes,
+ turrets and even the famous crusher from the trailer. The game also 
+includes a console to mess around with after finishing the game, or just
+ being frustrated by thinking with portals!
+&lt;br /&gt;&lt;br /&gt;  &lt;b&gt;Some history:&lt;/b&gt;
+&lt;br /&gt;Portal: The Flash Version started as a Flash project by Hen Mazolski
+ and Ido Tal, back when Valve first announced about their exciting new 
+game. We define ourselves as definite Valve fanboys, and we just 
+couldn't wait to play the game.
+&lt;br /&gt;We decided to make our own version of it ourselves, just for us, as a
+ side project. Little did we know, it turned out to be a very fun game 
+to play even in 2D, and after some pressure from our close friends, we 
+decided to send it out to the world. This is the result.
+
+&lt;br /&gt;&lt;br /&gt;  &lt;b&gt;Game Controls:&lt;/b&gt;
+&lt;br /&gt;Left mouse button - launch a portal.
+&lt;br /&gt;A W D - movement
+&lt;br /&gt;Q - launch a blue portal.
+&lt;br /&gt;E - launch a yellow portal.
+&lt;br /&gt;R - Close both portals.
+&lt;br /&gt;F - pick up an object.
+&lt;br /&gt;~ - open up console (enable through the options)
+&lt;br /&gt;O - quick quality adjust.
+&lt;br /&gt;Esc/P - pause game.
+&lt;/div&gt;</description>
+  <mediatype>software</mediatype>
+  <scanner>Internet Archive Python library 1.8.5</scanner>
+  <title>Portal: The Flash Version</title>
+  <uploader>openawsbuckets@gmail.com</uploader>
+  <publicdate>2020-11-02 21:49:26</publicdate>
+  <addeddate>2020-11-02 21:49:26</addeddate>
+  <year>2007</year>
+  <emulator>ruffle-swf</emulator>
+  <emulator_ext>swf</emulator_ext>
+  <curation>[curator]validator@archive.org[/curator][date]20201102215921[/date][comment]checked for malware[/comment]</curation>
+  <collection>softwarelibrary_flash</collection>
+  <collection>softwarelibrary</collection>
+  <collection>emulation</collection>
+</metadata>
