@@ -30,18 +30,22 @@
             width: 800px;
             height: 600px;
             background-color: #000;
+            position: relative;
         }
         #fullscreen-btn {
             margin: 20px;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Flash Game</h1>
-    <button id="fullscreen-btn" onclick="toggleFullscreen()">Toggle Fullscreen</button>
     <div id="flash-container"></div>
+    <button id="fullscreen-btn" onclick="toggleFullscreen()">Toggle Fullscreen</button>
 </body>
 </html>
