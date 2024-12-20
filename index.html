@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Game</title>
-    <script src="ruffle.js"></script>
+    <script type="module" src="ruffle.js"></script>
     <script>
-        window.RufflePlayer = window.RufflePlayer || {};
         window.addEventListener("load", () => {
-            const ruffle = window.RufflePlayer.newest();
+            const ruffle = window.RufflePlayer || {};
             const player = ruffle.createPlayer();
             const container = document.getElementById("flash-container");
             container.appendChild(player);
