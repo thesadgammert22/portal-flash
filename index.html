@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flash Game</title>
+    <title>Wecome to the flash portal, explore all your favs with this flash bundle. select a game then enjoy! Happy gaming :)</title>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script>
-        window.addEventListener("load", () => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            const container = document.getElementById("flash-container");
-            container.appendChild(player);
-            player.load("Portal_wcs2.swf");
-        });
+        async function fetchSwfFiles() {
+            try {
+                const response = await fetch('swf-list.json');
+                const swfFiles = await response.json();
+                const dropdown = document.getElementById("swf-dropdown");
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("flash-container");
+                container.appendChild(player);
 
-        function toggleFullscreen() {
-            const container = document.getElementById("flash-container");
-            if (!document.fullscreenElement) {
-                container.requestFullscreen().catch(err => {
-                    alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+                swfFiles.forEach(file => {
+                    const option = document.createElement("option");
+                    option.value = file;
+                    option.text = file.split('/').pop();
+                    dropdown.add(option);
                 });
-            } else {
-                document.exitFullscreen();
+
+                dropdown.addEventListener("change", (event) => {
+                    player.load(event.target.value);
+                });
+            } catch (error) {
+                console.error('Error fetching SWF files:', error);
             }
         }
+
+        document.addEventListener("DOMContentLoaded", fetchSwfFiles);
     </script>
     <style>
         #flash-container {
@@ -32,20 +40,20 @@
             background-color: #000;
             position: relative;
         }
-        #fullscreen-btn {
+        #swf-dropdown {
             margin: 20px;
-            padding: 10px 20px;
+            padding: 10px;
             font-size: 16px;
-            cursor: pointer;
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
+            max-height: 200px; /* Set the maximum height of the dropdown */
+            overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
         }
     </style>
 </head>
 <body>
-    <h1>Flash Game</h1>
+    <h1>Flash Game Loader</h1>
+    <select id="swf-dropdown">
+        <option value="" selected disabled>Select a game</option>
+    </select>
     <div id="flash-container"></div>
-    <button id="fullscreen-btn" onclick="toggleFullscreen()">Toggle Fullscreen</button>
 </body>
 </html>
