@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Game</title>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script src="ruffle.js"></script>
     <script>
         window.addEventListener("load", () => {
             const ruffle = window.RufflePlayer.newest();
@@ -13,10 +13,35 @@
             container.appendChild(player);
             player.load("Portal_wcs2.swf");
         });
+
+        function toggleFullscreen() {
+            const container = document.getElementById("flash-container");
+            if (!document.fullscreenElement) {
+                container.requestFullscreen().catch(err => {
+                    alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
     </script>
+    <style>
+        #flash-container {
+            width: 800px;
+            height: 600px;
+            background-color: #000;
+        }
+        #fullscreen-btn {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Flash Game</h1>
-    <div id="flash-container" style="width: 800px; height: 600px;"></div>
+    <button id="fullscreen-btn" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+    <div id="flash-container"></div>
 </body>
 </html>
